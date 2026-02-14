@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350" width="900" height="350">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0dce1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8c8d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="350" fill="url(#bgGradient)"/>
+
+  <!-- Epidermis Layer (top) -->
+  <g>
+    <rect x="150" y="50" width="600" height="70" fill="#f5e6eb" stroke="#d398a6" stroke-width="2"/>
+    <text x="450" y="95" font-family="Georgia, serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#8B4A5C">
+      Epidermis
+    </text>
+    <text x="820" y="95" font-family="Georgia, serif" font-size="14" text-anchor="start" fill="#A0667A">
+      Outer layer
+    </text>
+  </g>
+
+  <!-- Dermis Layer (middle) -->
+  <g>
+    <rect x="150" y="130" width="600" height="100" fill="#f0dce1" stroke="#d398a6" stroke-width="2"/>
+    <text x="450" y="180" font-family="Georgia, serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#8B4A5C">
+      Dermis
+    </text>
+    <text x="820" y="180" font-family="Georgia, serif" font-size="14" text-anchor="start" fill="#A0667A">
+      Collagen &amp; elastin
+    </text>
+
+    <!-- Collagen dots forming -->
+    <circle cx="250" cy="155" r="2.5" fill="#d398a6" opacity="0.8"/>
+    <circle cx="280" cy="165" r="2.5" fill="#d398a6" opacity="0.7"/>
+    <circle cx="310" cy="150" r="2.5" fill="#d398a6" opacity="0.8"/>
+    <circle cx="340" cy="170" r="2.5" fill="#d398a6" opacity="0.7"/>
+    <circle cx="370" cy="155" r="2.5" fill="#d398a6" opacity="0.8"/>
+    <circle cx="400" cy="165" r="2.5" fill="#d398a6" opacity="0.7"/>
+    <circle cx="430" cy="150" r="2.5" fill="#d398a6" opacity="0.8"/>
+    <circle cx="460" cy="170" r="2.5" fill="#d398a6" opacity="0.7"/>
+    <circle cx="490" cy="155" r="2.5" fill="#d398a6" opacity="0.8"/>
+    <circle cx="520" cy="165" r="2.5" fill="#d398a6" opacity="0.7"/>
+    <circle cx="550" cy="150" r="2.5" fill="#d398a6" opacity="0.8"/>
+
+    <!-- Label for collagen -->
+    <text x="150" y="215" font-family="Georgia, serif" font-size="12" fill="#A0667A" font-style="italic">
+      New collagen forming →
+    </text>
+  </g>
+
+  <!-- Subcutaneous Layer (bottom) -->
+  <g>
+    <rect x="150" y="240" width="600" height="80" fill="#e8c8d4" stroke="#d398a6" stroke-width="2"/>
+    <text x="450" y="290" font-family="Georgia, serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#8B4A5C">
+      Subcutaneous (Hypodermis)
+    </text>
+    <text x="820" y="290" font-family="Georgia, serif" font-size="14" text-anchor="start" fill="#A0667A">
+      Fat &amp; support
+    </text>
+  </g>
+
+  <!-- Arrow connecting layers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#d398a6"/>
+    </marker>
+  </defs>
+  <line x1="100" y1="85" x2="100" y2="280" stroke="#d398a6" stroke-width="2" opacity="0.4" marker-end="url(#arrowhead)"/>
+</svg>

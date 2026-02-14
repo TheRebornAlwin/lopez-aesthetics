@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 550" width="450" height="550">
+  <defs>
+    <linearGradient id="portraitGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0dce1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d398a6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background with rounded corners -->
+  <rect x="0" y="0" width="450" height="550" rx="20" ry="20" fill="url(#portraitGradient)"/>
+
+  <!-- Decorative corner accent - top right -->
+  <circle cx="420" cy="30" r="20" fill="#d398a6" opacity="0.25"/>
+  <circle cx="435" cy="45" r="12" fill="#d398a6" opacity="0.15"/>
+
+  <!-- Decorative corner accent - bottom left -->
+  <circle cx="30" cy="520" r="20" fill="#d398a6" opacity="0.25"/>
+  <circle cx="15" cy="505" r="12" fill="#d398a6" opacity="0.15"/>
+
+  <!-- Subtle vertical accent line -->
+  <line x1="225" y1="80" x2="225" y2="480" stroke="#d398a6" stroke-width="1" opacity="0.3"/>
+
+  <!-- Decorative horizontal lines -->
+  <line x1="100" y1="200" x2="350" y2="200" stroke="#d398a6" stroke-width="0.5" opacity="0.25"/>
+  <line x1="100" y1="400" x2="350" y2="400" stroke="#d398a6" stroke-width="0.5" opacity="0.25"/>
+
+  <!-- Main text -->
+  <text x="225" y="220" font-family="Georgia, serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#8B4A5C">
+    Result Photo
+  </text>
+
+  <!-- Subtext -->
+  <text x="225" y="280" font-family="Georgia, serif" font-size="22" text-anchor="middle" fill="#A0667A" letter-spacing="0.5">
+    Natural, refreshed look
+  </text>
+
+  <!-- Decorative dots -->
+  <circle cx="80" cy="120" r="2" fill="#d398a6" opacity="0.4"/>
+  <circle cx="370" cy="140" r="2" fill="#d398a6" opacity="0.3"/>
+  <circle cx="90" cy="440" r="2" fill="#d398a6" opacity="0.35"/>
+  <circle cx="360" cy="460" r="2" fill="#d398a6" opacity="0.3"/>
+</svg>
