@@ -384,18 +384,16 @@ em {
     margin-bottom: 16px;
 }
 
-.ba-teaser-pair {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4px;
+.ba-teaser-item {
     border-radius: 12px;
     overflow: hidden;
 }
 
-.ba-teaser-pair img {
+.ba-teaser-item img {
     width: 100%;
-    aspect-ratio: 3/4;
+    aspect-ratio: auto;
     object-fit: cover;
+    border-radius: 12px;
     background: var(--pink-light);
 }
 
@@ -956,50 +954,24 @@ em {
     margin-bottom: 50px;
 }
 
-.ba-grid {
+.ba-grid-v2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-bottom: 30px;
 }
 
-.ba-card {
+.ba-card-v2 {
     background: var(--white);
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
-.ba-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.ba-image {
-    position: relative;
-    aspect-ratio: 3/4;
-    overflow: hidden;
-    background: var(--gray-light);
-}
-
-.ba-image img {
+.ba-card-v2 img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
-}
-
-.ba-label {
-    position: absolute;
-    bottom: 8px;
-    left: 8px;
-    background: rgba(0, 0, 0, 0.6);
-    color: var(--white);
-    font-size: 0.7rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding: 4px 10px;
-    border-radius: 4px;
+    display: block;
 }
 
 .ba-caption {
@@ -1477,7 +1449,7 @@ em {
         padding: 8px 0;
     }
 
-    .ba-grid {
+    .ba-grid-v2 {
         grid-template-columns: 1fr;
         gap: 20px;
     }
