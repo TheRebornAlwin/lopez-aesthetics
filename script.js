@@ -79,6 +79,36 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // --- Header: add scrolled class on scroll ---
+    var header = document.getElementById('header');
+    if (header) {
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    }
+
+    // --- Mobile menu toggle ---
+    var menuBtn = document.querySelector('.mobile-menu-btn');
+    var headerNav = document.querySelector('.header-nav');
+    if (menuBtn && headerNav) {
+        menuBtn.addEventListener('click', function () {
+            headerNav.classList.toggle('mobile-open');
+            menuBtn.classList.toggle('active');
+        });
+
+        // Close menu when a nav link is clicked
+        headerNav.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                headerNav.classList.remove('mobile-open');
+                menuBtn.classList.remove('active');
+            });
+        });
+    }
+
     // --- Floating WhatsApp button: show after scroll ---
     var floatingBtn = document.querySelector('.floating-whatsapp');
     if (floatingBtn) {
