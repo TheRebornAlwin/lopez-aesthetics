@@ -177,30 +177,12 @@ em {
 }
 
 .header-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
     font-family: var(--font-heading);
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--black);
     letter-spacing: -0.01em;
     transition: color 0.3s ease;
-    flex-shrink: 0;
-    overflow: hidden;
-}
-
-.header .header-logo .header-logo-img {
-    width: 36px !important;
-    height: 36px !important;
-    min-width: 36px;
-    max-width: 36px;
-    min-height: 36px;
-    max-height: 36px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
-    display: inline-block;
 }
 
 .header-nav {
@@ -392,20 +374,6 @@ em {
 .pain-validation {
     padding: var(--section-padding);
     background: var(--white);
-}
-
-.pain-hero-image {
-    margin-bottom: 40px;
-    border-radius: 20px;
-    overflow: hidden;
-    max-height: 400px;
-}
-
-.pain-hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
 }
 
 .pain-grid {
@@ -673,28 +641,6 @@ em {
     color: var(--gray);
 }
 
-.mechanism-visual {
-    margin: 50px 0;
-    text-align: center;
-}
-
-.mechanism-img {
-    width: 100%;
-    max-width: 900px;
-    border-radius: 16px;
-    margin: 0 auto 16px;
-    background: var(--pink-subtle);
-}
-
-.mechanism-img-caption {
-    font-size: 0.85rem;
-    color: var(--gray);
-    font-style: italic;
-    font-family: var(--font-heading);
-    max-width: 600px;
-    margin: 0 auto;
-}
-
 .mechanism-closer {
     max-width: 750px;
     font-size: 1.05rem;
@@ -872,20 +818,6 @@ em {
     left: 0;
     color: var(--pink-dark);
     font-weight: 700;
-}
-
-.fear-visual {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.fear-img {
-    width: 100%;
-    border-radius: 20px;
-    object-fit: cover;
-    max-height: 350px;
-    background: var(--pink-light);
 }
 
 .fear-quote-block {
@@ -1221,16 +1153,6 @@ em {
 .cta-content {
     max-width: 620px;
     margin: 0 auto;
-}
-
-.cta-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto 32px;
-    border: 3px solid rgba(211, 152, 166, 0.3);
-    background: rgba(211, 152, 166, 0.1);
 }
 
 .final-cta h2 {
