@@ -186,13 +186,18 @@ em {
     color: var(--black);
     letter-spacing: -0.01em;
     transition: color 0.3s ease;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
 .header-logo-img {
     width: 36px;
     height: 36px;
+    min-width: 36px;
+    max-width: 36px;
     border-radius: 50%;
     object-fit: cover;
+    flex-shrink: 0;
 }
 
 .header-nav {
