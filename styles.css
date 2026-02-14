@@ -369,6 +369,62 @@ em {
 }
 
 /* ============================================
+   B&A TEASER — Early social proof strip
+   ============================================ */
+.ba-teaser {
+    padding: 50px 0 40px;
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.ba-teaser-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 16px;
+}
+
+.ba-teaser-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.ba-teaser-pair img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    background: var(--pink-light);
+}
+
+.ba-teaser-text {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--gray);
+    margin-top: 16px;
+}
+
+.ba-teaser-text a {
+    color: var(--pink-dark);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.ba-teaser-text a:hover {
+    color: var(--pink);
+}
+
+@media (max-width: 768px) {
+    .ba-teaser-strip {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin: 0 auto 16px;
+    }
+}
+
+/* ============================================
    PAIN VALIDATION SECTION
    ============================================ */
 .pain-validation {
