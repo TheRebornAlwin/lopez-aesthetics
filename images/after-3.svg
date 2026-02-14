@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 533" width="400" height="533">
+  <rect width="400" height="533" fill="#f0dce1"/>
+  <rect x="15" y="15" width="370" height="503" rx="6" fill="none" stroke="#d398a6" stroke-width="1.2" opacity="0.5"/>
+  <!-- Camera icon -->
+  <rect x="165" y="220" width="70" height="52" rx="8" fill="none" stroke="#c08898" stroke-width="2" opacity="0.5"/>
+  <circle cx="200" cy="246" r="16" fill="none" stroke="#c08898" stroke-width="1.8" opacity="0.5"/>
+  <circle cx="200" cy="246" r="7" fill="#d398a6" opacity="0.3"/>
+  <rect x="178" y="223" width="18" height="6" rx="2" fill="#c08898" opacity="0.35"/>
+  <!-- Label -->
+  <text x="200" y="320" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#8a5060" font-weight="bold">After Photo 3</text>
+  <text x="200" y="348" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#b07888" opacity="0.6">Client Results</text>
+  <!-- AFTER badge -->
+  <rect x="145" y="460" width="110" height="32" rx="16" fill="#d398a6" opacity="0.4"/>
+  <text x="200" y="481" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#8a5060" font-weight="bold" letter-spacing="2">AFTER</text>
+</svg>

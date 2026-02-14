@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="colBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0dce1"/>
+      <stop offset="100%" style="stop-color:#e8ced5"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#colBg)"/>
+  <!-- Collagen layer lines -->
+  <path d="M0,80 Q100,60 200,80 T400,75" fill="none" stroke="#d398a6" stroke-width="2" opacity="0.6"/>
+  <path d="M0,100 Q100,85 200,100 T400,95" fill="none" stroke="#d398a6" stroke-width="2.5" opacity="0.7"/>
+  <path d="M0,120 Q100,110 200,125 T400,115" fill="none" stroke="#c78a98" stroke-width="2" opacity="0.5"/>
+  <!-- Cross-linked fibers -->
+  <line x1="80" y1="70" x2="120" y2="130" stroke="#d398a6" stroke-width="1.5" opacity="0.4"/>
+  <line x1="160" y1="65" x2="190" y2="128" stroke="#d398a6" stroke-width="1.5" opacity="0.4"/>
+  <line x1="240" y1="72" x2="270" y2="125" stroke="#d398a6" stroke-width="1.5" opacity="0.4"/>
+  <line x1="320" y1="68" x2="350" y2="120" stroke="#d398a6" stroke-width="1.5" opacity="0.4"/>
+  <!-- Skin surface layer -->
+  <rect x="40" y="55" width="320" height="8" rx="4" fill="#c78a98" opacity="0.3"/>
+  <!-- Dermis region -->
+  <rect x="40" y="70" width="320" height="70" rx="4" fill="#d398a6" opacity="0.1" stroke="#d398a6" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- Subcutaneous layer dots -->
+  <circle cx="80" cy="170" r="15" fill="#d398a6" opacity="0.15"/>
+  <circle cx="130" cy="180" r="20" fill="#d398a6" opacity="0.12"/>
+  <circle cx="190" cy="165" r="18" fill="#d398a6" opacity="0.15"/>
+  <circle cx="250" cy="175" r="22" fill="#d398a6" opacity="0.12"/>
+  <circle cx="310" cy="168" r="16" fill="#d398a6" opacity="0.15"/>
+  <!-- Labels -->
+  <text x="200" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#8a5060" font-weight="bold">Collagen Layers</text>
+  <text x="370" y="65" text-anchor="end" font-family="Georgia, serif" font-size="9" fill="#a06070">Epidermis</text>
+  <text x="370" y="105" text-anchor="end" font-family="Georgia, serif" font-size="9" fill="#a06070">Dermis</text>
+  <text x="370" y="175" text-anchor="end" font-family="Georgia, serif" font-size="9" fill="#a06070">Subcutaneous</text>
+  <!-- Collagen fiber helix hints -->
+  <path d="M100,155 Q108,148 116,155 Q124,162 132,155" fill="none" stroke="#c78a98" stroke-width="1.5" opacity="0.4"/>
+  <path d="M200,150 Q208,143 216,150 Q224,157 232,150" fill="none" stroke="#c78a98" stroke-width="1.5" opacity="0.4"/>
+  <text x="200" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#b07888" opacity="0.7">Illustration</text>
+</svg>

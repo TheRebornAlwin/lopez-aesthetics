@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" width="500" height="600">
+  <defs>
+    <linearGradient id="treatBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0dce1"/>
+      <stop offset="100%" style="stop-color:#e4c8d0"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="600" fill="url(#treatBg)"/>
+  <!-- Decorative border -->
+  <rect x="20" y="20" width="460" height="560" rx="8" fill="none" stroke="#d398a6" stroke-width="1.5" opacity="0.5"/>
+  <!-- Camera/photo icon -->
+  <rect x="200" y="230" width="100" height="75" rx="10" fill="none" stroke="#c08898" stroke-width="2.5" opacity="0.6"/>
+  <circle cx="250" cy="267" r="22" fill="none" stroke="#c08898" stroke-width="2" opacity="0.6"/>
+  <circle cx="250" cy="267" r="10" fill="#d398a6" opacity="0.3"/>
+  <rect x="220" y="233" width="25" height="8" rx="3" fill="#c08898" opacity="0.4"/>
+  <!-- Decorative elements -->
+  <line x1="120" y1="350" x2="380" y2="350" stroke="#d398a6" stroke-width="1" opacity="0.4"/>
+  <circle cx="250" cy="350" r="4" fill="#d398a6" opacity="0.5"/>
+  <!-- Text -->
+  <text x="250" y="390" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#8a5060" font-weight="bold">Treatment Photo</text>
+  <text x="250" y="420" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#b07888" opacity="0.7">Sculptra Procedure</text>
+  <!-- Subtle decorative corners -->
+  <path d="M35,35 L65,35 M35,35 L35,65" fill="none" stroke="#d398a6" stroke-width="1" opacity="0.4"/>
+  <path d="M465,35 L435,35 M465,35 L465,65" fill="none" stroke="#d398a6" stroke-width="1" opacity="0.4"/>
+  <path d="M35,565 L65,565 M35,565 L35,535" fill="none" stroke="#d398a6" stroke-width="1" opacity="0.4"/>
+  <path d="M465,565 L435,565 M465,565 L465,535" fill="none" stroke="#d398a6" stroke-width="1" opacity="0.4"/>
+</svg>
