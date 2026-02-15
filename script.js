@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // --- Fade-in on scroll (Intersection Observer) ---
     const fadeElements = document.querySelectorAll(
         '.pain-card, .why-reframe, .comparison-card, .ba-card, ' +
-        '.testimonial-card, .skeptic-card, .step, .info-block, ' +
+        '.testimonial-card, .faq-item, .step, .info-block, ' +
         '.maria-text, .maria-photo, .fear-text, .fear-quote-block, ' +
         '.cta-content, .collagen-stat'
     );

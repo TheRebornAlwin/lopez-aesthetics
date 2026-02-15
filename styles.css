@@ -1119,29 +1119,66 @@ em {
     margin-bottom: 50px;
 }
 
-.skepticism-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+.faq-accordion {
+    max-width: 720px;
+    margin: 0 auto;
 }
 
-.skeptic-card {
+.faq-item {
     background: var(--off-white);
-    border-radius: 16px;
-    padding: 36px 32px;
     border: 1px solid var(--gray-light);
+    border-radius: 12px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
 }
 
-.skeptic-card h3 {
+.faq-item[open] {
+    border-color: var(--pink);
+}
+
+.faq-item summary {
     font-family: var(--font-heading);
-    font-style: normal;
     font-weight: 600;
     font-size: 1.15rem;
     color: var(--black);
-    margin-bottom: 16px;
+    padding: 24px 28px;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    transition: color 0.2s ease;
 }
 
-.skeptic-card p {
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: '+';
+    font-family: var(--font-body);
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--pink-dark);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+    content: '\2212';
+}
+
+.faq-item summary:hover {
+    color: var(--pink-dark);
+}
+
+.faq-answer {
+    padding: 0 28px 24px;
+}
+
+.faq-answer p {
     font-size: 0.9rem;
     color: var(--gray-dark);
     line-height: 1.7;
@@ -1367,15 +1404,15 @@ em {
         margin: 0 auto;
     }
 
-    .hero-image img:nth-child(2) {
-        display: none;
-    }
-
     .hero-image img {
         max-width: 100%;
         max-height: 250px;
         object-fit: cover;
         border-radius: 12px;
+    }
+
+    .hero-image img:nth-child(2) {
+        display: none !important;
     }
 
     .hero-ctas {
@@ -1499,13 +1536,13 @@ em {
         padding: 28px 24px;
     }
 
-    .skepticism-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
+    .faq-item summary {
+        padding: 20px 20px;
+        font-size: 1.05rem;
     }
 
-    .skeptic-card {
-        padding: 28px 24px;
+    .faq-answer {
+        padding: 0 20px 20px;
     }
 
     .process-steps {
