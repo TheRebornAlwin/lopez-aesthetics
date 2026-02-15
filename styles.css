@@ -345,9 +345,6 @@ em {
     border-radius: 16px;
     display: block;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.hero-image img {
     height: auto;
 }
 
@@ -992,6 +989,10 @@ em {
 .ba-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.ba-card-mobile-only {
+    display: none;
 }
 
 .ba-card > img {
@@ -1687,6 +1688,10 @@ em {
     .ba-caption {
         padding: 10px 14px;
         font-size: 0.78rem;
+    }
+
+    .ba-card-mobile-only {
+        display: block;
     }
 
     .ba-proof {
