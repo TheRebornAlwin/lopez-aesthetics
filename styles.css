@@ -265,9 +265,9 @@ em {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    align-items: center;
+    align-items: start;
     min-height: calc(100vh - 80px);
-    padding: 60px 24px;
+    padding: 100px 24px 60px;
 }
 
 .hero-text {
@@ -338,10 +338,15 @@ em {
 .hero-image img {
     width: 100%;
     max-width: 400px;
-    height: auto;
     border-radius: 16px;
     display: block;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image img:first-child {
+    height: 280px;
+    object-fit: cover;
+    object-position: center top;
 }
 
 /* ============================================
@@ -389,7 +394,8 @@ em {
 
 .ba-proof-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
@@ -637,8 +643,8 @@ em {
 }
 
 .comparison-new {
-    background: var(--pink-subtle);
-    border: 1px solid var(--pink-light);
+    background: var(--pink-light);
+    border: 1px solid var(--pink);
 }
 
 .comparison-card h3 {
@@ -723,23 +729,23 @@ em {
    ============================================ */
 .sculptra-reveal {
     padding: var(--section-padding);
-    background: #000000;
-    color: var(--white);
+    background: var(--pink-light);
+    color: var(--black);
 }
 
 .sculptra-reveal .section-eyebrow {
-    color: var(--pink);
+    color: var(--pink-dark);
 }
 
 .sculptra-reveal h2 {
-    color: var(--white);
+    color: var(--black);
     font-size: clamp(2.4rem, 5vw, 4rem);
     margin-bottom: 8px;
 }
 
 .reveal-subtitle {
     font-size: 1.15rem;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--gray-dark);
     margin-bottom: 40px;
     max-width: 550px;
     text-align: center;
@@ -764,14 +770,14 @@ em {
 }
 
 .info-block h3 {
-    color: var(--pink);
+    color: var(--pink-dark);
     font-size: 1.3rem;
     margin-bottom: 16px;
     text-align: center;
 }
 
 .info-block p {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--gray-dark);
     margin-bottom: 12px;
     font-size: 0.95rem;
     text-align: center;
@@ -805,21 +811,21 @@ em {
     height: 17px;
     min-width: 17px;
     border-radius: 50%;
-    border: 2px solid var(--pink);
-    background: #000000;
+    border: 2px solid var(--pink-dark);
+    background: var(--white);
     margin-top: 4px;
 }
 
 .sculptra-timeline strong {
     display: block;
-    color: var(--white);
+    color: var(--black);
     font-size: 0.95rem;
     margin-bottom: 4px;
 }
 
 .sculptra-timeline p {
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.65);
+    color: var(--gray);
     margin: 0;
 }
 
@@ -831,20 +837,20 @@ em {
 }
 
 .trust-badge {
-    background: rgba(211, 152, 166, 0.1);
-    border: 1px solid rgba(211, 152, 166, 0.2);
+    background: var(--white);
+    border: 1px solid var(--pink);
     border-radius: 12px;
     padding: 20px 24px;
 }
 
 .trust-badge p {
-    color: var(--white);
+    color: var(--black);
     font-size: 0.95rem;
 }
 
 .trust-small {
     font-size: 0.82rem !important;
-    color: rgba(255, 255, 255, 0.6) !important;
+    color: var(--gray) !important;
     margin-top: 4px;
 }
 
@@ -976,7 +982,8 @@ em {
 
 .ba-card > img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
