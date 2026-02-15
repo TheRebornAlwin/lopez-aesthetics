@@ -354,6 +354,7 @@ em {
    ============================================ */
 /* Scattered B&A proof images throughout page */
 .ba-proof {
+    display: none;
     max-width: 520px;
     margin: 0 auto;
     padding: 40px 24px;
@@ -1167,12 +1168,26 @@ em {
     border: 1px solid var(--gray-light);
     border-radius: 12px;
     margin-bottom: 12px;
-    overflow: hidden;
     transition: border-color 0.3s ease;
 }
 
 .faq-item[open] {
     border-color: var(--pink);
+}
+
+.faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease;
+}
+
+.faq-item[open] .faq-answer {
+    grid-template-rows: 1fr;
+}
+
+.faq-answer-inner {
+    overflow: hidden;
+    padding: 0 28px 24px;
 }
 
 .faq-item summary {
@@ -1210,10 +1225,6 @@ em {
 
 .faq-item summary:hover {
     color: var(--pink-dark);
-}
-
-.faq-answer {
-    padding: 0 28px 24px;
 }
 
 .faq-answer p {
@@ -1574,12 +1585,12 @@ em {
 
     .hero {
         min-height: auto;
-        padding-top: 70px;
+        padding-top: 80px;
     }
 
     .hero-split {
         min-height: auto;
-        padding: 30px 16px 50px;
+        padding: 20px 16px 50px;
     }
 
     .hero h1 {
@@ -1642,6 +1653,7 @@ em {
     }
 
     .ba-proof {
+        display: block;
         max-width: 100%;
         padding: 30px 16px;
     }
@@ -1678,7 +1690,7 @@ em {
         font-size: 1.05rem;
     }
 
-    .faq-answer {
+    .faq-answer-inner {
         padding: 0 20px 20px;
     }
 
