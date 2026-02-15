@@ -64,6 +64,10 @@ a {
     padding: 0 24px;
 }
 
+.mobile-br {
+    display: none;
+}
+
 /* --- Typography --- */
 h1, h2, h3 {
     font-family: var(--font-heading);
@@ -1595,11 +1599,14 @@ em {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        background: var(--white);
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
     }
 
     .sculptra-timeline li:not(:last-child)::after {
-        left: 50%;
-        transform: translateX(-50%);
+        display: none;
     }
 
     .trust-badge {
@@ -1618,14 +1625,19 @@ em {
         display: block;
     }
 
+    .mobile-br {
+        display: block;
+    }
+
     .hero {
         min-height: auto;
         padding-top: 100px;
+        padding-bottom: 60px;
     }
 
     .hero-split {
         min-height: auto;
-        padding: 20px 20px 80px;
+        padding: 20px 20px 100px;
     }
 
     .hero h1 {
@@ -1638,7 +1650,7 @@ em {
     }
 
     h2 {
-        font-size: clamp(1.5rem, 5vw, 2.2rem);
+        font-size: clamp(1.9rem, 6vw, 2.4rem);
     }
 
     .section-eyebrow {
@@ -1718,6 +1730,69 @@ em {
 
     .testimonial-card {
         padding: 28px 24px;
+        text-align: center;
+    }
+
+    .testimonial-card cite {
+        display: block;
+    }
+
+    .stars {
+        text-align: center;
+    }
+
+    /* Checkmarks inline with text on mobile */
+    .cta-promises span {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding-left: 0;
+    }
+
+    .cta-promises span::before {
+        position: static;
+        flex-shrink: 0;
+    }
+
+    .fear-list,
+    .maria-credentials ul,
+    .maria-promise ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fear-list li,
+    .comparison-new li,
+    .comparison-old li {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 8px;
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .fear-list li::before,
+    .comparison-new li::before,
+    .comparison-old li::before {
+        position: static;
+        flex-shrink: 0;
+        line-height: 1.6;
+    }
+
+    .maria-credentials li,
+    .maria-promise li {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 8px;
+        padding-left: 0;
+    }
+
+    .maria-credentials li::before,
+    .maria-promise li::before {
+        position: static;
+        flex-shrink: 0;
+        line-height: 1.6;
     }
 
     .faq-item summary {
@@ -1790,6 +1865,14 @@ em {
     .results-intro {
         font-size: 0.9rem;
         margin-bottom: 30px;
+    }
+
+    .cta-sub {
+        font-size: 0.95rem;
+    }
+
+    .reveal-subtitle {
+        font-size: 0.95rem;
     }
 }
 
@@ -1886,7 +1969,23 @@ em {
     }
 
     .final-cta h2 {
-        font-size: 1.6rem;
+        font-size: 2rem;
+    }
+
+    .cta-sub {
+        font-size: 0.9rem;
+    }
+
+    .reveal-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .results-intro {
+        font-size: 0.85rem;
+    }
+
+    .mechanism-intro {
+        font-size: 0.9rem;
     }
 
     .btn-cta-main {
