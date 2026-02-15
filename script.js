@@ -79,6 +79,22 @@ document.addEventListener('DOMContentLoaded', function () {
         requestAnimationFrame(step);
     }
 
+    // --- FAQ smooth close animation ---
+    document.querySelectorAll('.faq-item').forEach(function (details) {
+        details.querySelector('summary').addEventListener('click', function (e) {
+            if (details.open) {
+                e.preventDefault();
+                var answer = details.querySelector('.faq-answer');
+                answer.style.gridTemplateRows = '0fr';
+                answer.addEventListener('transitionend', function handler() {
+                    details.open = false;
+                    answer.style.gridTemplateRows = '';
+                    answer.removeEventListener('transitionend', handler);
+                }, { once: true });
+            }
+        });
+    });
+
     // --- Smooth scroll for anchor links ---
     document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
         anchor.addEventListener('click', function (e) {
