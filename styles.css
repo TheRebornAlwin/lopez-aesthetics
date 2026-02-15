@@ -1243,9 +1243,13 @@ em {
 /* ============================================
    PROCESS SECTION
    ============================================ */
+.process-cta-wrapper {
+    background: linear-gradient(170deg, var(--white) 0%, var(--pink-subtle) 30%, var(--pink-light) 65%, #e8c5ce 100%);
+}
+
 .process {
     padding: var(--section-padding);
-    background: linear-gradient(170deg, var(--white) 0%, var(--pink-subtle) 50%, var(--pink-light) 100%);
+    background: transparent;
 }
 
 .process-steps {
@@ -1299,7 +1303,7 @@ em {
    ============================================ */
 .final-cta {
     padding: 100px 0;
-    background: linear-gradient(170deg, var(--pink-subtle) 0%, var(--pink-light) 60%, #e8c5ce 100%);
+    background: transparent;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -1632,7 +1636,11 @@ em {
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+    }
+
+    .pain-closer {
+        font-size: 1.3rem;
     }
 
     .hero-sub,
@@ -1852,7 +1860,7 @@ em {
     }
 
     .hero h1 {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 
     .hero-sub,
