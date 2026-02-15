@@ -90,7 +90,8 @@ h3 {
 
 em {
     font-family: var(--font-heading);
-    font-style: italic;
+    font-style: normal;
+    font-weight: 600;
     font-size: 1.05em;
 }
 
@@ -233,21 +234,6 @@ em {
 
 .mobile-menu-btn {
     display: none;
-    flex-direction: column;
-    gap: 5px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 4px;
-}
-
-.mobile-menu-btn span {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background: var(--black);
-    border-radius: 2px;
-    transition: all 0.3s ease;
 }
 
 /* ============================================
@@ -325,47 +311,37 @@ em {
 }
 
 .btn-outline {
-    background: transparent;
-    color: var(--black-soft);
-    border: 1.5px solid var(--gray-light);
+    background: var(--white);
+    color: var(--pink-dark);
+    border: 2px solid var(--pink);
     padding: 16px 32px;
+    font-weight: 500;
 }
 
 .btn-outline:hover {
-    border-color: var(--pink);
-    color: var(--pink-dark);
-    background: rgba(211, 152, 166, 0.05);
+    border-color: var(--pink-dark);
+    color: var(--white);
+    background: var(--pink-dark);
 }
 
 .hero-image {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: start;
 }
 
 .hero-image img {
-    position: relative;
-    z-index: 2;
     width: 100%;
-    max-width: 480px;
-    border-radius: 24px;
-    object-fit: cover;
-    aspect-ratio: 3/4;
-    background: var(--pink-light);
+    height: auto;
+    border-radius: 16px;
+    display: block;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.hero-image-accent {
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    width: 100%;
-    max-width: 480px;
-    aspect-ratio: 3/4;
-    border-radius: 24px;
-    border: 2px solid var(--pink);
-    opacity: 0.3;
-    z-index: 1;
+.hero-image img:nth-child(2) {
+    margin-top: 40px;
 }
 
 /* ============================================
@@ -391,7 +367,8 @@ em {
 .ba-proof-caption {
     padding: 12px 0 0;
     font-size: 0.85rem;
-    font-style: italic;
+    font-style: normal;
+    font-weight: 500;
     color: var(--gray-dark);
 }
 
@@ -421,7 +398,8 @@ em {
 .banner-caption {
     font-size: 0.85rem;
     color: var(--gray);
-    font-style: italic;
+    font-style: normal;
+    font-weight: 500;
     font-family: var(--font-heading);
     text-align: center;
     max-width: 600px;
@@ -469,7 +447,8 @@ em {
     margin: 0 auto;
     font-size: 1.1rem;
     font-family: var(--font-heading);
-    font-style: italic;
+    font-style: normal;
+    font-weight: 600;
     color: var(--gray-dark);
     line-height: 1.7;
 }
@@ -694,7 +673,8 @@ em {
 .comparison-divider span {
     font-family: var(--font-heading);
     font-size: 1.2rem;
-    font-style: italic;
+    font-style: normal;
+    font-weight: 600;
     color: var(--gray);
 }
 
@@ -843,7 +823,8 @@ em {
 
 .fear-text h2 {
     font-size: clamp(1.5rem, 2.5vw, 2rem);
-    font-style: italic;
+    font-style: normal;
+    font-weight: 600;
     color: var(--gray-dark);
     margin-bottom: 24px;
     line-height: 1.4;
@@ -900,7 +881,8 @@ em {
 .fear-quote-block blockquote p {
     font-family: var(--font-heading);
     font-size: 1.3rem;
-    font-style: italic;
+    font-style: normal;
+    font-weight: 500;
     line-height: 1.6;
     color: var(--black-soft);
     margin-bottom: 16px;
@@ -957,7 +939,8 @@ em {
     padding: 16px 20px;
     font-size: 0.85rem;
     color: var(--gray-dark);
-    font-style: italic;
+    font-style: normal;
+    font-weight: 500;
     line-height: 1.5;
 }
 
@@ -1085,7 +1068,8 @@ em {
 
 .maria-philosophy p {
     font-family: var(--font-heading);
-    font-style: italic;
+    font-style: normal;
+    font-weight: 500;
     font-size: 1.1rem;
     line-height: 1.7;
     color: var(--gray-dark);
@@ -1127,7 +1111,8 @@ em {
 
 .skeptic-card h3 {
     font-family: var(--font-heading);
-    font-style: italic;
+    font-style: normal;
+    font-weight: 600;
     font-size: 1.15rem;
     color: var(--black);
     margin-bottom: 16px;
@@ -1229,12 +1214,12 @@ em {
 }
 
 .cta-reassurance {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 36px;
-    font-style: italic;
+    font-style: normal;
+    font-weight: 500;
     font-family: var(--font-heading);
-    font-size: 1rem;
 }
 
 .cta-micro {
@@ -1294,7 +1279,8 @@ em {
 .footer-tagline {
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.5);
-    font-style: italic;
+    font-style: normal;
+    font-weight: 500;
     font-family: var(--font-heading);
 }
 
@@ -1330,13 +1316,19 @@ em {
         display: none;
     }
 
-    .mobile-menu-btn {
-        display: flex;
+    .btn-header-cta {
+        padding: 8px 16px;
+        font-size: 0.75rem;
+    }
+
+    .btn-header-cta .whatsapp-icon-sm {
+        width: 14px;
+        height: 14px;
     }
 
     .hero-split {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 30px;
         text-align: center;
         padding: 40px 24px;
     }
@@ -1347,16 +1339,24 @@ em {
     }
 
     .hero-image {
-        order: 0;
-        justify-content: center;
+        order: 2;
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .hero-image img:nth-child(2) {
+        display: none;
     }
 
     .hero-image img {
-        max-width: 340px;
+        max-height: 250px;
+        object-fit: cover;
+        border-radius: 12px;
     }
 
-    .hero-image-accent {
-        max-width: 340px;
+    .hero-image img:nth-child(2) {
+        margin-top: 0;
     }
 
     .hero-ctas {
@@ -1649,35 +1649,3 @@ em {
     }
 }
 
-/* --- Mobile nav dropdown --- */
-@media (max-width: 1024px) {
-    .header-nav {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: var(--white);
-        flex-direction: column;
-        padding: 20px 24px;
-        gap: 16px;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-        border-top: 1px solid var(--gray-light);
-    }
-
-    .header-nav.mobile-open {
-        display: flex;
-    }
-
-    .mobile-menu-btn.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-
-    .mobile-menu-btn.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .mobile-menu-btn.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
-    }
-}
