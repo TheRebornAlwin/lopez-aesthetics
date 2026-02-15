@@ -392,7 +392,7 @@ em {
 
 .ba-teaser-item img {
     width: 100%;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
     display: block;
     background: var(--pink-light);
@@ -980,7 +980,7 @@ em {
 
 .ba-card-v2 img {
     width: 100%;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
     display: block;
 }
