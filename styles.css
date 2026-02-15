@@ -801,9 +801,8 @@ em {
 
 .sculptra-img {
     border-radius: 16px;
-    background: var(--gray-dark);
-    min-height: 300px;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
     margin-bottom: 20px;
 }
 
@@ -1452,13 +1451,17 @@ em {
 
     .hero-image img {
         max-width: 100%;
-        max-height: 250px;
-        object-fit: cover;
-        border-radius: 12px;
+        height: auto;
+        border-radius: 16px;
     }
 
-    .hero-image img:nth-child(2) {
+    .hero-image img + img {
         display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
+        visibility: hidden !important;
+        position: absolute !important;
     }
 
     .hero-ctas {
