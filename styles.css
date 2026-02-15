@@ -347,10 +347,8 @@ em {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.hero-image img:first-child {
-    height: 280px;
-    object-fit: cover;
-    object-position: center top;
+.hero-image img {
+    height: auto;
 }
 
 /* ============================================
@@ -1522,14 +1520,6 @@ em {
         border-radius: 16px;
     }
 
-    .hero-image img + img {
-        display: none !important;
-        width: 0 !important;
-        height: 0 !important;
-        overflow: hidden !important;
-        visibility: hidden !important;
-        position: absolute !important;
-    }
 
     .hero-ctas {
         justify-content: center;
@@ -1741,58 +1731,19 @@ em {
         text-align: center;
     }
 
-    /* Checkmarks inline with text on mobile */
-    .cta-promises span {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        padding-left: 0;
-    }
-
-    .cta-promises span::before {
-        position: static;
-        flex-shrink: 0;
-    }
 
     .fear-list,
     .maria-credentials ul,
     .maria-promise ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .fear-list li,
-    .comparison-new li,
-    .comparison-old li {
-        display: inline-flex;
-        align-items: flex-start;
-        gap: 8px;
-        padding-left: 0;
-        text-align: left;
-    }
-
-    .fear-list li::before,
-    .comparison-new li::before,
-    .comparison-old li::before {
-        position: static;
-        flex-shrink: 0;
-        line-height: 1.6;
-    }
-
-    .maria-credentials li,
-    .maria-promise li {
-        display: inline-flex;
-        align-items: flex-start;
-        gap: 8px;
-        padding-left: 0;
-    }
-
-    .maria-credentials li::before,
-    .maria-promise li::before {
-        position: static;
-        flex-shrink: 0;
-        line-height: 1.6;
+    .comparison-card ul {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .faq-item summary {
@@ -1821,6 +1772,16 @@ em {
     }
 
     .footer-info {
+        text-align: center;
+    }
+
+    .footer-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-tagline {
         text-align: center;
     }
 
