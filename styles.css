@@ -958,14 +958,14 @@ em {
     margin-bottom: 50px;
 }
 
-.ba-grid-v2 {
+.ba-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-bottom: 30px;
 }
 
-.ba-card-v2 {
+.ba-card {
     background: var(--white);
     border-radius: 16px;
     overflow: hidden;
@@ -973,16 +973,42 @@ em {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.ba-card-v2:hover {
+.ba-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
-.ba-card-v2 img {
+.ba-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ba-before,
+.ba-after {
+    position: relative;
+    overflow: hidden;
+}
+
+.ba-before img,
+.ba-after img {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 3 / 4;
     object-fit: cover;
     display: block;
+}
+
+.ba-label {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--white);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 4px 10px;
+    border-radius: 4px;
 }
 
 .ba-caption {
@@ -1461,7 +1487,7 @@ em {
         padding: 8px 0;
     }
 
-    .ba-grid-v2 {
+    .ba-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
