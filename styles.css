@@ -385,15 +385,16 @@ em {
 }
 
 .ba-teaser-item {
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
 .ba-teaser-item img {
     width: 100%;
-    aspect-ratio: auto;
+    aspect-ratio: 3 / 4;
     object-fit: cover;
-    border-radius: 12px;
+    display: block;
     background: var(--pink-light);
 }
 
@@ -416,9 +417,12 @@ em {
 
 @media (max-width: 768px) {
     .ba-teaser-strip {
-        grid-template-columns: 1fr;
-        max-width: 300px;
-        margin: 0 auto 16px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .ba-teaser-item {
+        border-radius: 10px;
     }
 }
 
@@ -965,20 +969,28 @@ em {
     background: var(--white);
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ba-card-v2:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .ba-card-v2 img {
     width: 100%;
+    aspect-ratio: 3 / 4;
     object-fit: cover;
     display: block;
 }
 
 .ba-caption {
-    padding: 20px 24px;
-    font-size: 0.9rem;
+    padding: 16px 20px;
+    font-size: 0.85rem;
     color: var(--gray-dark);
     font-style: italic;
+    line-height: 1.5;
 }
 
 .results-note {
