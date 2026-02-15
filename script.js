@@ -8,7 +8,12 @@ if ('scrollRestoration' in history) {
 }
 window.scrollTo(0, 0);
 
+window.addEventListener('load', function () {
+    window.scrollTo(0, 0);
+});
+
 document.addEventListener('DOMContentLoaded', function () {
+    window.scrollTo(0, 0);
 
     // --- Fade-in on scroll (Intersection Observer) ---
     const fadeElements = document.querySelectorAll(

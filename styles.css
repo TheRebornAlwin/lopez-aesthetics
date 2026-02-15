@@ -134,9 +134,19 @@ em {
     box-shadow: 0 8px 25px rgba(211, 152, 166, 0.4);
 }
 
-.btn-cta-large {
-    font-size: 1.05rem;
-    padding: 18px 48px;
+.section-cta-wrap {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.section-cta-wrap.section-cta-left {
+    text-align: left;
+    margin-top: 28px;
+}
+
+.btn-section-cta {
+    padding: 12px 28px;
+    font-size: 0.88rem;
 }
 
 .whatsapp-icon {
