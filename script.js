@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting && !hasAnimated) {
                     hasAnimated = true;
-                    animateCounter(counterEl, 0, 30, 1500);
+                    animateCounter(counterEl, 0, 35, 1500);
                     counterObserver.unobserve(entry.target);
                 }
             });

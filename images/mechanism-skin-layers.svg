@@ -20,5 +20,4 @@
   <circle cx="700" cy="185" r="3" fill="#d398a6" opacity="0.6"/>
   <rect x="50" y="220" width="800" height="80" rx="4" fill="#f0dce1" stroke="#d398a6" stroke-width="1" opacity="0.6"/>
   <text x="450" y="265" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#b87a8a">Subcutaneous — Deep tissue</text>
-  <text x="450" y="330" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#b87a8a">Replace with professional skin layers diagram</text>
 </svg>
