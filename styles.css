@@ -439,6 +439,10 @@ em {
     margin: 50px 0;
 }
 
+.mobile-diagram {
+    display: none;
+}
+
 .pain-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -489,7 +493,7 @@ em {
    ============================================ */
 .why-section {
     padding: var(--section-padding);
-    background: var(--pink-subtle);
+    background: linear-gradient(170deg, var(--white) 0%, var(--pink-subtle) 50%, var(--pink-light) 100%);
 }
 
 .why-content {
@@ -730,7 +734,7 @@ em {
    ============================================ */
 .sculptra-reveal {
     padding: var(--section-padding);
-    background: var(--pink-light);
+    background: linear-gradient(170deg, var(--pink-subtle) 0%, var(--pink-light) 60%, #e8c5ce 100%);
     color: var(--black);
 }
 
@@ -1238,7 +1242,7 @@ em {
    ============================================ */
 .process {
     padding: var(--section-padding);
-    background: var(--pink-subtle);
+    background: linear-gradient(170deg, var(--white) 0%, var(--pink-subtle) 50%, var(--pink-light) 100%);
 }
 
 .process-steps {
@@ -1292,7 +1296,7 @@ em {
    ============================================ */
 .final-cta {
     padding: 100px 0;
-    background: var(--pink-light);
+    background: linear-gradient(170deg, var(--pink-subtle) 0%, var(--pink-light) 60%, #e8c5ce 100%);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -1583,25 +1587,45 @@ em {
         text-align: center;
     }
 
-    .mechanism-banner {
-        max-height: none;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+    .sculptra-timeline {
+        text-align: center;
     }
 
-    .mechanism-banner img {
-        min-width: 500px;
-        height: auto;
+    .sculptra-timeline li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sculptra-timeline li:not(:last-child)::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .trust-badge {
+        text-align: center;
+    }
+
+    .mechanism-banner {
+        max-height: none;
+    }
+
+    .mechanism-banner .desktop-diagram {
+        display: none;
+    }
+
+    .mechanism-banner .mobile-diagram {
+        display: block;
     }
 
     .hero {
         min-height: auto;
-        padding-top: 80px;
+        padding-top: 100px;
     }
 
     .hero-split {
         min-height: auto;
-        padding: 20px 20px 60px;
+        padding: 20px 20px 80px;
     }
 
     .hero h1 {
@@ -1868,7 +1892,6 @@ em {
     .btn-cta-main {
         padding: 16px 28px;
         font-size: 0.9rem;
-        width: 100%;
         justify-content: center;
     }
 
