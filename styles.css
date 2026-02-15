@@ -709,7 +709,7 @@ em {
    ============================================ */
 .sculptra-reveal {
     padding: var(--section-padding);
-    background: var(--black);
+    background: #000000;
     color: var(--white);
 }
 
@@ -782,7 +782,7 @@ em {
     min-width: 17px;
     border-radius: 50%;
     border: 2px solid var(--pink);
-    background: var(--black);
+    background: #000000;
     margin-top: 4px;
 }
 
@@ -1239,7 +1239,7 @@ em {
    ============================================ */
 .final-cta {
     padding: 100px 0;
-    background: linear-gradient(160deg, var(--pink-subtle) 0%, var(--pink-light) 50%, var(--pink) 100%);
+    background: var(--pink-light);
     text-align: center;
     position: relative;
     overflow: hidden;
