@@ -2,6 +2,12 @@
    LOPEZ AESTHETICS — Landing Page Scripts
    ============================================ */
 
+// Always scroll to top on page load/reload
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+window.scrollTo(0, 0);
+
 document.addEventListener('DOMContentLoaded', function () {
 
     // --- Fade-in on scroll (Intersection Observer) ---
