@@ -753,16 +753,23 @@ em {
     margin-right: auto;
 }
 
+.sculptra-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 .sculptra-hero-img {
-    max-width: 700px;
-    margin: 0 auto 50px;
     border-radius: 16px;
     overflow: hidden;
+    position: sticky;
+    top: 100px;
 }
 
 .sculptra-details-single {
-    max-width: 700px;
-    margin: 0 auto;
 }
 
 .info-block {
@@ -773,14 +780,14 @@ em {
     color: var(--pink-dark);
     font-size: 1.3rem;
     margin-bottom: 16px;
-    text-align: center;
+    text-align: left;
 }
 
 .info-block p {
     color: var(--gray-dark);
     margin-bottom: 12px;
     font-size: 0.95rem;
-    text-align: center;
+    text-align: left;
 }
 
 .sculptra-timeline {
@@ -1549,6 +1556,20 @@ em {
 @media (max-width: 768px) {
     :root {
         --section-padding: 60px 0;
+    }
+
+    .sculptra-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .sculptra-hero-img {
+        position: static;
+    }
+
+    .info-block h3,
+    .info-block p {
+        text-align: center;
     }
 
     .hero {
